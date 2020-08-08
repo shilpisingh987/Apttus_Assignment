@@ -15,7 +15,7 @@ public class HomePage {
 	@Test
 	public void Initialization() {
 
-		System.setProperty("webdriver.chrome.driver", "..//Shilpi_Assignment//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "..//Apttus_Assignment//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
