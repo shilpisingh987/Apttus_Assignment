@@ -17,8 +17,8 @@ public class api {
 	public void postStationWithKey() {
 
 		JsonObject json1 = new JsonObject();
-		json1.addProperty("external_id", "DEMO_TEST001");
-		json1.addProperty("name", "San Francisco Test Station");
+		json1.addProperty("external_id", "DEMO_TEST002");
+		json1.addProperty("name", "San Francisco Test Station 123");
 		json1.addProperty("latitude", 33.33);
 		json1.addProperty("longitude", -111.43);
 		json1.addProperty("altitude", 444);
@@ -108,6 +108,7 @@ public class api {
 
 	@Test(priority = 5)
 	public void getStationWithoutKey() {
+		RestAssured.baseURI = "http://api.openweathermap.org/";
 		String getresponse = given().log().all().header("Content-Type", "application/json").body(Payload.AddPlace())
 				.when().get("data/3.0/stations").then().assertThat().statusCode(401).extract().asString();
 		System.out.println(getresponse);
