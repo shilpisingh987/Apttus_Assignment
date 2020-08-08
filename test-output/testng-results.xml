@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11507" started-at="2020-08-07T10:40:15Z" finished-at="2020-08-07T10:40:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11507" started-at="2020-08-07T10:40:15Z" finished-at="2020-08-07T10:40:26Z">
+      <class name="API_Scenario.api">
+        <test-method status="PASS" signature="postStationWithKey()[pri:1, instance:API_Scenario.api@1cd072a9]" name="postStationWithKey" duration-ms="9243" started-at="2020-08-07T16:10:15Z" finished-at="2020-08-07T16:10:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postStationWithKey -->
+        <test-method status="PASS" signature="getStation()[pri:2, instance:API_Scenario.api@1cd072a9]" name="getStation" duration-ms="820" started-at="2020-08-07T16:10:24Z" finished-at="2020-08-07T16:10:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStation -->
+        <test-method status="PASS" signature="deleteRequest()[pri:3, instance:API_Scenario.api@1cd072a9]" name="deleteRequest" duration-ms="602" started-at="2020-08-07T16:10:25Z" finished-at="2020-08-07T16:10:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRequest -->
+        <test-method status="PASS" signature="getdeleteRequest()[pri:4, instance:API_Scenario.api@1cd072a9]" name="getdeleteRequest" duration-ms="615" started-at="2020-08-07T16:10:25Z" finished-at="2020-08-07T16:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdeleteRequest -->
+        <test-method status="PASS" signature="getStationWithoutKey()[pri:5, instance:API_Scenario.api@1cd072a9]" name="getStationWithoutKey" duration-ms="155" started-at="2020-08-07T16:10:26Z" finished-at="2020-08-07T16:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStationWithoutKey -->
+      </class> <!-- API_Scenario.api -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
