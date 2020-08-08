@@ -1,33 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11507" started-at="2020-08-07T10:40:15Z" finished-at="2020-08-07T10:40:26Z">
+  <suite name="Default suite" duration-ms="9707" started-at="2020-08-08T12:32:20Z" finished-at="2020-08-08T12:32:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11507" started-at="2020-08-07T10:40:15Z" finished-at="2020-08-07T10:40:26Z">
-      <class name="API_Scenario.api">
-        <test-method status="PASS" signature="postStationWithKey()[pri:1, instance:API_Scenario.api@1cd072a9]" name="postStationWithKey" duration-ms="9243" started-at="2020-08-07T16:10:15Z" finished-at="2020-08-07T16:10:24Z">
+    <test name="Default test" duration-ms="9707" started-at="2020-08-08T12:32:20Z" finished-at="2020-08-08T12:32:30Z">
+      <class name="com.api.scenario.api">
+        <test-method status="PASS" signature="postStationWithKey()[pri:1, instance:com.api.scenario.api@5ba23b66]" name="postStationWithKey" duration-ms="7683" started-at="2020-08-08T18:02:20Z" finished-at="2020-08-08T18:02:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postStationWithKey -->
-        <test-method status="PASS" signature="getStation()[pri:2, instance:API_Scenario.api@1cd072a9]" name="getStation" duration-ms="820" started-at="2020-08-07T16:10:24Z" finished-at="2020-08-07T16:10:25Z">
+        <test-method status="PASS" signature="getStation()[pri:2, instance:com.api.scenario.api@5ba23b66]" name="getStation" duration-ms="702" started-at="2020-08-08T18:02:28Z" finished-at="2020-08-08T18:02:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStation -->
-        <test-method status="PASS" signature="deleteRequest()[pri:3, instance:API_Scenario.api@1cd072a9]" name="deleteRequest" duration-ms="602" started-at="2020-08-07T16:10:25Z" finished-at="2020-08-07T16:10:25Z">
+        <test-method status="FAIL" signature="deleteRequest()[pri:3, instance:com.api.scenario.api@5ba23b66]" name="deleteRequest" duration-ms="499" started-at="2020-08-08T18:02:29Z" finished-at="2020-08-08T18:02:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [204] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [204] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.api.scenario.api.deleteRequest(api.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteRequest -->
-        <test-method status="PASS" signature="getdeleteRequest()[pri:4, instance:API_Scenario.api@1cd072a9]" name="getdeleteRequest" duration-ms="615" started-at="2020-08-07T16:10:25Z" finished-at="2020-08-07T16:10:26Z">
+        <test-method status="PASS" signature="getdeleteRequest()[pri:4, instance:com.api.scenario.api@5ba23b66]" name="getdeleteRequest" duration-ms="470" started-at="2020-08-08T18:02:29Z" finished-at="2020-08-08T18:02:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdeleteRequest -->
-        <test-method status="PASS" signature="getStationWithoutKey()[pri:5, instance:API_Scenario.api@1cd072a9]" name="getStationWithoutKey" duration-ms="155" started-at="2020-08-07T16:10:26Z" finished-at="2020-08-07T16:10:26Z">
+        <test-method status="PASS" signature="getStationWithoutKey()[pri:5, instance:com.api.scenario.api@5ba23b66]" name="getStationWithoutKey" duration-ms="286" started-at="2020-08-08T18:02:30Z" finished-at="2020-08-08T18:02:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStationWithoutKey -->
-      </class> <!-- API_Scenario.api -->
+      </class> <!-- com.api.scenario.api -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
